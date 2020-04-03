@@ -4,7 +4,8 @@ import { ThemeProvider, DefaultTheme } from "styled-components";
 import usePersistedState from "./utils/usePersistedState";
 
 import GlobalStyle from "./styles/global"
-import Header from "./components/Header"
+import Header from "./components/Header";
+import Container from "./components/Container";
 import light from "./styles/themes/light";
 import dark from "./styles/themes/dark";
  
@@ -20,6 +21,7 @@ function App() {
       <div className="App">
         <GlobalStyle/>
         <Header toggleTheme={toggleTheme}/>
+        <Container />
       </div>
     </ThemeProvider>
   );

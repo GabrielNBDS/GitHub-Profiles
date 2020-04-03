@@ -1,5 +1,4 @@
 import { useState, useEffect, Dispatch, SetStateAction } from "react";
-import light from "../styles/themes/light";
 
 type Response<T> = [
   T,
