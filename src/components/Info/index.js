@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import swal from 'sweetalert';
 
-import { Container, Picture, TextBox, Link } from "./styles";
+import { Container, InfoContainer, Picture, TextBox, Link } from "./styles";
 
 const Info = ({ username }) => {
   const [user, setUser] = useState({});
@@ -41,7 +41,7 @@ const Info = ({ username }) => {
 
   const userInfo = (user) => {
     return(<Container>
-      <div style={{display: "flex"}}>
+      <InfoContainer>
         <Picture url={user.avatar_url}/>
         <TextBox>
           Name: {user.name}<br/>Username: {user.login}<br/>Followers: {user.followers}<br/>Repositories count: {user.public_repos}
@@ -49,7 +49,7 @@ const Info = ({ username }) => {
         <TextBox>
         Newest Repositories:<br/>{ repos.map(element => { return ( <div key={element.id}> <Link  target="_blank" href={`https://github.com/${username}/${element.name}`}> {element.name} </Link> <br/> </div>)})}
         </TextBox>
-      </div>
+      </InfoContainer>
       
     </Container>
     )
