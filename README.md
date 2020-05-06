@@ -1,8 +1,13 @@
-# Github Profiles
+<h1 align=center >Github Profiles</h1>
+
+<h3 align=center>Link para o App: https://github-profiles.netlify.com/</h3>
+
+<p align=center>
+  <img src="assets/ghprofiles.png" width=800px />
+</p>
 
 App para mostrar informações de usuário do Github. Ideia tirada do App Ideas: https://github.com/florinpop17/app-ideas/blob/master/Projects/2-Intermediate/GitHub-Profiles.md.
 
-## Link para o App: https://github-profiles.netlify.com/
 
 ### Tecnologias usadas:
   - Typescript
